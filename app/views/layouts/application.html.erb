@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal portfolio of web development and design projects by Alex Rapley">
+    <meta name="author" content="Alex Rapley">
+
+    <title>Alex Rapley | Creative Web Development</title>
+
+
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'arlogoresize-min.png' %>
+    <%= stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css', media: 'all' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

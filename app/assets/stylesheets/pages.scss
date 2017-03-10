@@ -1,0 +1,575 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* Variables */
+
+$dark-grey: #434343;
+$light-green: #78C68E;
+
+/* General Styles / Normalisation */
+
+body {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: #FFF;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFF;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+header {
+    height: 760px;
+    background: linear-gradient(228deg, #78C68E, #56b4d3);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    transform: skew(0,-4.5deg);
+    margin: -8rem 0 4rem;
+}
+
+
+/* Box Shadow for sections */
+header,
+.intro,
+.copyright {
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    background: transparent;
+    border: none;
+    font-family: 'Futura', sans-serif;
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
+#navbarCollapse {
+    border-color: transparent;
+}
+
+#navbarCollapse li a {
+    color: #FFF;
+    background: transparent;
+    border-radius: 5px;
+    padding: 20px 30px 10px 30px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#navbarCollapse li a:hover {
+    border-bottom: 3px solid #FFF;
+    border-radius: 0;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-default .navbar-toggle {
+    margin-right: 30px;
+    border: 1px solid #FFF;
+    transition: ease-in-out 0.7s;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:visited {
+    background: #A7A7A7;
+}
+
+.container .navbar-header {
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    #navbarCollapse, #navbarCollapse li a, .navbar, .navbar-header {
+        background-color: transparent;
+        color: #FFF;
+        margin-top: 10px;
+    }
+}
+
+
+/* Page Title Section */
+
+.inner {
+  transform: skew(0,4.5deg);
+  min-height: 20rem;
+  padding: 7rem 0 4rem;
+}
+
+.page-title img {
+    width: 180px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.floating {
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);
+	}
+	50% {
+		-webkit-transform: translateY(8%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
+
+.page-title {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    color: #FFF;
+}
+
+.page-title h1 {
+    font-family: 'Futura', sans-serif;
+    font-weight: 100;
+    font-size: 6em;
+    margin: 0;
+    text-shadow: 0 2px 0 rgba(0,91,103,.15);
+}
+
+.page-title h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 515px) {
+    .page-title {
+        padding-top: 50px;
+        padding-bottom: 280px;
+    }
+    .page-title h1 {
+        font-size: 4.2em;
+    }
+}
+
+@media (max-width: 1030px) {
+    .page-title {
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+}
+
+
+/* Portfolio Section */
+
+.projects {
+    background: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 7rem 0 4rem;
+}
+
+.projects h2 {
+  color: #434343;
+}
+
+.projects p {
+    font-size: 1.4em;
+}
+
+.projects .portfolio-item {
+    margin: 30px auto;
+    right: 0;
+
+}
+
+.projects .portfolio-item img {
+  border-radius: 10px;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+}
+
+.projects .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.projects .portfolio-item .portfolio-link .caption {
+    background: #78C68E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.projects .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+.projects .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -12px;
+    top: 50%;
+    color: white;
+}
+
+.projects .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+    color: #D6D6D6;
+}
+
+.projects .portfolio-item .portfolio-link .caption .caption-content p {
+  font-size: 14px;
+  margin-top: -36px;
+}
+
+.projects * {
+    z-index: 2;
+}
+
+
+/* About Section */
+
+.intro {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(228deg, #78C68E, #56b4d3);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    transform: skew(0,-4.5deg);
+    height: 768px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        height: 960px;
+    }
+    .portrait {
+      width: 300px !important;
+      height: 300px !important;
+    }
+}
+
+.intro-inner {
+  transform: skew(0,4.5deg);
+  min-height: 20rem;
+  padding: 7rem 0 4rem;
+}
+
+.intro p {
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 1.4em;
+    background: #FFF;
+    border-radius: 10px;
+    line-height: 1.4em;
+    color: #161616;
+    box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+}
+
+.intro p a:hover {
+    color: #78C68E;
+    text-decoration: none;
+}
+
+.intro a {
+    color: inherit;
+    font-style: italic;
+}
+
+.intro .fa-id-card {
+  color: #FFF;
+}
+
+.intro i {
+  font-size: 28px;
+  color: #444444;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.intro .flip-container {
+  perspective: 1000px;
+}
+
+	/* flip the pane when hovered */
+  .flip-container.flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 100%auto;;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+}
+
+
+/* Contact / Footer */
+
+.social {
+    background: #FFF;
+    padding: 7rem 0 4rem;
+}
+
+.social h2 {
+  color: #434343;
+}
+
+.social .contact-form {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  padding: 20px;
+  margin: 30px auto 30px auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+}
+
+.social .contact-form p {
+  padding-bottom: 20px;
+}
+
+
+
+.social .contact-form .form-group {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+
+
+.social ul {
+    padding: 0;
+    margin: 30px auto 30px auto;
+}
+
+.social ul li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.social i {
+    font-size: 36px !important;
+    color: #444444;
+    width: 48px;
+    height: 48px;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+// .social i:hover {
+//   color: #78C68E;
+//   background: #FFF;
+// }
+
+.social i.fa-envelope:hover {
+  color: rgb(210, 50, 74);
+  background: #FFF;
+}
+
+.social i.fa-github:hover {
+  color: #000;
+}
+
+.social i.fa-linkedin:hover {
+  color: rgb(1, 119, 181);
+}
+
+.social i.fa-twitter:hover {
+  color: rgb(29, 161, 242);
+}
+
+
+/* Scroll Top Button */
+
+.scroll-top a {
+    background: none;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    text-decoration: none;
+    color: $dark-grey;
+}
+
+.scroll-top a i {
+    font-size: 48px;
+}
+
+.copyright {
+    text-align: center;
+    color: #FFF;
+    padding: 5px;
+    background: linear-gradient(228deg, #348f50, #56b4d3);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:81% 0%}
+        50%{background-position:20% 100%}
+        100%{background-position:81% 0%}
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .page-title h1 {
+        font-size: 4.2em;
+    }
+}
