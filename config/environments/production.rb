@@ -1,6 +1,21 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.default_url_options = { host: 'https://arapl3y.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
 
+
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+   :port           => 587,
+   :address        => 'smtp.mailgun.org',
+   :user_name      => ENV['MAILGUN_DEFAULT_SMTP'],
+   :password       => ENV['MAILGUN_PASSWORD'],
+   :domain         => ENV["MAILGUN_DOMAIN_URL"],
+   :authentication => :plain
+  }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
