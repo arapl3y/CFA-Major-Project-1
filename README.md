@@ -9,7 +9,7 @@
 ---
 
 
-### The Process
+## The Process :triangular_ruler:
 
 My goal for this project was to create a clean, minimal and modern portfolio page. I took my previous portfolio design and replaced images with colour gradients, straight lines with skewed lines and a number of other alterations to create a modern and engaging experience for the user.
 
@@ -35,7 +35,7 @@ I also used [Trello](https://trello.com/b/lujtBX49/personal-portfolio) to make s
 
 Due to my design being image heavy, I decided to use [Optimizilla](http://optimizilla.com/) to create optimised, minified copies of my images which drastically decreased load time.
 
-### The Design
+## The Design :pencil2:
 
 My favourite example of engaging, clean web design at the moment is https://stripe.com, so naturally when given the task of revamping my own website, I took a lot of inspiration from [Benjamin de Cock's](https://dribbble.com/bdc) designs.
 
@@ -47,7 +47,7 @@ I also implemented a new contact form which provides the user a quick and simple
 
 [Start Bootstrap's Freelancer Theme](https://blackrockdigital.github.io/startbootstrap-freelancer/) was also crucial in determining my initial layout.
 
-### The Projects
+## The Projects :art:
 
 The bulk of my projects section is made up of web application challenges completed as part of [FreeCodeCamp's](https://freecodecamp.com) Front End Development certificate as well as [Rob Dey's Essential Web Developer Course](http://upskillcourses.com/courses/enrolled/essential-web-developer-course).
 
@@ -59,5 +59,5 @@ I used the [A-Frame Framework](https://aframe.io) in conjunction with [A-Frame E
 
 <br>
 
-<h3>Thanks for reading and enjoy the portfolio!</h3>
+<h3>Thanks for reading and enjoy the portfolio! :shipit:</h3>
 
