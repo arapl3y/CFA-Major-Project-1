@@ -78,14 +78,10 @@ $(document).ready(function() {
     $('#lang').on('click', function() {
       if (app.language) {
         $('.flip-container').toggleClass('flip');
-        $('.front').css('visibility', 'hidden');
-        $('.back').css('visibility', 'visible')
         $('#lang').text('ENG');
         app.language = false;
       } else {
         $('.flip-container').toggleClass('flip');
-        $('.back').css('visibility', 'hidden')
-        $('.front').css('visibility', 'visible');
         $('#lang').text('中文');
         app.language = true;
       }
