@@ -2,7 +2,11 @@
 
 <h1 align="center">alexrapley.com</h1>
 
-<p align="center"><a href="https://alexrapley.com" target="_blank"><img width="240" height="220" alt="Alexrapley.com" src="app/assets/images/arlogoresize-min.png"></a></p>
+<p align="center">
+
+<a href="https://alexrapley.com" target="_blank"><img width="240" height="220" alt="Alexrapley.com" src="app/assets/images/arlogoresize-min.png"></a>
+<a href="http://imgur.com/m3pkTSo"><img width="280" height="220" src="http://i.imgur.com/m3pkTSo.png" alt="coder factory" /></a>
+</p>
 
 <p align="center"><b>Personal portfolio project for Coder Factory Academy Term 1.</b></p>
 
