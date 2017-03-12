@@ -20,7 +20,9 @@ Most of my design choices were made after compiling a small check list on paper.
 [PHOTO OF WRITTEN DESIGN PLAN]
 
 I also used Trello to make sure I kept to my original plan and was fulfilling the outcomes I had set the project...
-https://trello.com/b/lujtBX49/personal-portfolio (fill this out with basic user stories/design idea)
+https://trello.com/b/lujtBX49/personal-portfolio (fill this out with basic user stories/design idea).
+
+Due to my design being image heavy, I decided to use [http://optimizilla.com/](Optimizilla) to create optimised, minified copies of my images which drastically decreased load time.
 
 ### The Design
 
