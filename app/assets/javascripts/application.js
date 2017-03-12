@@ -45,23 +45,24 @@ $(document).ready(function() {
   };
 
 
-  // Scroll to top of the page button
-  app.scrollTopBtn = function() {
-    // scroll to top button fade
+  //   // Scroll to top of the page button fade on scroll up
+  app.buttonFade = function() {
     app.offset = 250;
     app.duration = 300;
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > app.offset) {
         $('.scroll-top').fadeIn(app.duration);
+        $('.vr-link').fadeIn(app.duration);
       } else {
         $('.scroll-top').fadeOut(app.duration);
+        $('.vr-link').fadeOut(app.duration);
       }
     });
   };
 
-  // Scroll to top of the page button fade on scroll up
-  app.buttonFade = function() {
+  // Scroll to top button
+  app.scrollTopBtn = function() {
     $('.scroll-top').click(function(e) {
       e.preventDefault();
       $('html, body').animate({
@@ -77,10 +78,14 @@ $(document).ready(function() {
     $('#lang').on('click', function() {
       if (app.language) {
         $('.flip-container').toggleClass('flip');
+        $('.front').css('visibility', 'hidden');
+        $('.back').css('visibility', 'visible')
         $('#lang').text('ENG');
         app.language = false;
       } else {
         $('.flip-container').toggleClass('flip');
+        $('.back').css('visibility', 'hidden')
+        $('.front').css('visibility', 'visible');
         $('#lang').text('中文');
         app.language = true;
       }
