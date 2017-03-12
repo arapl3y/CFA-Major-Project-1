@@ -1,24 +1,36 @@
-# README
+<h1 align="center">Alexrapley.com</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center"><a href="https://alexrapley.com" target="_blank"><img width="380" alt="Alexrapley.com" src="app/assets/images/arlogoresize-min.png"></a></p>
 
-Things you may want to cover:
+<p align="center"><b>Personal portfolio project for Coder Factory Academy Term 1.</b></p>
 
-* Ruby version
+---
 
-* System dependencies
 
-* Configuration
+### The Process
 
-* Database creation
+--Add photo of previous iteration of portfolio
+--Add photo of written design plan
 
-* Database initialization
+https://trello.com/b/lujtBX49/personal-portfolio (fill this out with basic user stories/design idea)
 
-* How to run the test suite
+### The Design
+Design section
 
-* Services (job queues, cache servers, search engines, etc.)
+https://davidwalsh.name/css-flip
 
-* Deployment instructions
+https://www.gradient-animator.com/
 
-* ...
+https://stripe.com/
+
+https://blackrockdigital.github.io/startbootstrap-freelancer/
+
+### The Projects
+
+FreeCodeCamp section
+
+A-Frame section
+
+http://eddiebarkman.com/VR-Design-Portfolio/
+
+https://github.com/donmccurdy/aframe-extras
