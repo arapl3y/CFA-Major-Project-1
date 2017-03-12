@@ -21,6 +21,7 @@ My goal for this project was to create a clean, minimal and modern portfolio pag
 <br>
 <b>Current:</b>
 <br>
+
 <a href="http://imgur.com/qmND0cP"><img width="650" height="400" src="http://i.imgur.com/qmND0cP.png" alt="current header"/></a>
 
 
@@ -28,9 +29,9 @@ Most of my design choices were made after compiling a small check list on paper.
 
 <a href="http://imgur.com/j2YdVzz"><img width="500" height="600" src="http://i.imgur.com/j2YdVzz.jpg" alt="design plan"/></a>
 
-I also used [Trello](https://trello.com/b/lujtBX49/personal-portfolio) to make sure I kept to my original plan and was fulfilling the outcomes I had set the project...
-<a href="http://imgur.com/5kSsVZS"><img src="http://i.imgur.com/5kSsVZS.png" alt="trello agile" /></a>
+I also used [Trello](https://trello.com/b/lujtBX49/personal-portfolio) to make sure I kept to my original plan and was fulfilling the outcomes I had set for the project...
 
+<a href="http://imgur.com/5kSsVZS"><img src="http://i.imgur.com/5kSsVZS.png" alt="trello agile" /></a>
 
 Due to my design being image heavy, I decided to use [Optimizilla](http://optimizilla.com/) to create optimised, minified copies of my images which drastically decreased load time.
 
