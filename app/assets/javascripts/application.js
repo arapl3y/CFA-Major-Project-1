@@ -45,12 +45,13 @@ $(document).ready(function() {
   };
 
 
-  //   // Scroll to top of the page button fade on scroll up
+  // Scroll to top of the page button fade on scroll up
   app.buttonFade = function() {
     app.offset = 250;
     app.duration = 300;
 
     $(window).scroll(function() {
+
       if ($(this).scrollTop() > app.offset) {
         $('.scroll-top').fadeIn(app.duration);
         $('.vr-link').fadeIn(app.duration);
