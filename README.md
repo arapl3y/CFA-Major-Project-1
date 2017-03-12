@@ -11,7 +11,7 @@
 
 ### The Process
 
-My goal for this project was to create a clean, minimal and modern portfolio page. I took my previous portfolio design and replaced images with colour gradients, straight lines with skewed lines and a number of other alterations to create an equal parts pleasing and engaging experience for the user.
+My goal for this project was to create a clean, minimal and modern portfolio page. I took my previous portfolio design and replaced images with colour gradients, straight lines with skewed lines and a number of other alterations to create a modern and engaging experience for the user.
 
 <b>Previous:</b>
 <br>
