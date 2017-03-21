@@ -8,7 +8,9 @@
   <a href="http://imgur.com/m3pkTSo"><img width="280" height="220" src="http://i.imgur.com/m3pkTSo.png" alt="coder factory" />  </a>
 </h1>
 
-<p align="center"><b>Personal portfolio project for Coder Factory Academy Term 1.</b></p>
+<p align="center"><b>Personal portfolio project for Coder Factory Academy Term 1.<br>
+Built using HTML, CSS, jQuery and Ruby on Rails
+</b></p>
 
 ---
 
