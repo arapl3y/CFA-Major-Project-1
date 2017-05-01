@@ -236,7 +236,10 @@ header {
 .projects {
   background: #FFF;
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 7rem 0 4rem;
+  padding-top: 7rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 7rem;
 }
 
 .projects h2 {
@@ -547,25 +550,6 @@ header {
 
 .scroll-top a i {
   font-size: 40px;
-}
-/* VR button */
-.vr-link a {
-  background: none;
-  margin: 0;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  z-index: 100;
-  text-decoration: none;
-  color: $dark-grey;
-}
-
-.vr-link a i {
-  font-size: 40px;
-  transform: rotate(180deg);
 }
 
 .copyright {
