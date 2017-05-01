@@ -1,145 +1,171 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-/* Variables */
+@import url( 'https://fonts.googleapis.com/css?family=Ubuntu');
+@import url( 'https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url( 'https://fonts.googleapis.com/css?family=Raleway');
+
+// Variables
 
 $dark-grey: #434343;
-$light-green: #78C68E;
+$light-green: #78c68e;
 
-/* General Styles / Normalisation */
+// General Styles / Normalisation
 
 body {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    background: #FFF;
-    -webkit-font-smoothing: antialiased;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  height: auto;
+  text-align: center;
+  width: 100%;
 }
 
-
 .container {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
 .row {
-    margin: 0;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #FFF;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
-  text-transform: uppercase;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 header {
-    height: 700px;
-    background: linear-gradient(228deg, #78C68E, #56b4d3);
-    background-size: 400% 400%;
+  -moz-animation: AnimationName 6s ease infinite;
+  -webkit-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  background: -webkit-linear-gradient(318deg, #78C68E, #56b4d3);
+  background: -o-linear-gradient(318deg, #78C68E, #56b4d3);
+  background: linear-gradient(48deg, #78C68E, #56b4d3);
+  background-size: 400% 400%;
+  height: 700px;
 
-    -webkit-animation: AnimationName 6s ease infinite;
-    -moz-animation: AnimationName 6s ease infinite;
-    animation: AnimationName 6s ease infinite;
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
+    }
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+    50% {
+      background-position: 20% 100%;
     }
-    @-moz-keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+
+    100% {
+      background-position: 81% 0;
     }
-    @keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
     }
-    transform: skew(0,-4.5deg);
-    margin: -8rem 0 4rem;
+
+    50% {
+      background-position: 20% 100%;
+    }
+
+    100% {
+      background-position: 81% 0;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
+    }
+
+    50% {
+      background-position: 20% 100%;
+    }
+
+    100% {
+      background-position: 81% 0;
+    }
+  }
+  margin: -8rem 0 4rem;
+  transform: skew(0,-4.5deg);
 }
 
-
-/* Box Shadow for sections */
-header,
+// Box Shadow for sections
+.copyright,
 .intro,
-.copyright {
-    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+header {
+  -webkit-box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.5);
 }
 
-
-/* Navigation Bar */
-
+// Navigation Bar
 .navbar {
-    background: transparent;
-    border: none;
-    font-family: 'Futura', sans-serif;
-    font-weight: 100;
-    font-size: 1.6em;
+  background: transparent;
+  border: 0;
+  font-family: 'Futura', sans-serif;
+  font-size: 1.6em;
+  font-weight: 100;
 }
 
 #navbarCollapse {
-    border-color: transparent;
+  border-color: transparent;
 }
 
 #navbarCollapse li a {
-    color: #FFF;
-    background: transparent;
-    border-radius: 5px;
-    padding: 20px 30px 10px 30px;
-    border-bottom: 3px solid transparent;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 30px 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #navbarCollapse li a:hover {
-    border-bottom: 3px solid #FFF;
-    border-radius: 0;
+  border-bottom: 3px solid white;
+  border-radius: 0;
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
 .navbar-default .navbar-toggle {
-    margin-right: 30px;
-    border: 1px solid #FFF;
-    transition: ease-in-out 0.7s;
+  border: 1px solid white;
+  margin-right: 30px;
+  transition: ease-in-out .7s;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:visited {
-    background: #A7A7A7;
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:visited {
+  background: #A7A7A7;
 }
 
 .container .navbar-header {
-    margin: auto;
+  margin: auto;
 }
-
-
 /* Page Title Section */
-
 .inner {
   transform: skew(0,4.5deg);
   min-height: 20rem;
@@ -147,73 +173,70 @@ header,
 }
 
 .page-title img {
-    width: 180px;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  width: 180px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .floating {
-	animation-name: floating;
-	-webkit-animation-name: floating;
-
-	animation-duration: 3s;
-	-webkit-animation-duration: 3s;
-
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
-
 @keyframes floating {
-	0% {
-		transform: translateY(0%);
-	}
-	50% {
-		transform: translateY(8%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
-}
+  0% {
+    transform: translateY(0%);
+  }
 
+  50% {
+    transform: translateY(8%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
 @-webkit-keyframes floating {
-	0% {
-		-webkit-transform: translateY(0%);
-	}
-	50% {
-		-webkit-transform: translateY(8%);
-	}
-	100% {
-		-webkit-transform: translateY(0%);
-	}
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 .page-title {
-    padding-top: 50px;
-    padding-bottom: 150px;
-    color: #FFF;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  color: #FFF;
 }
 
 .page-title h1 {
-    font-family: 'Futura', sans-serif;
-    font-weight: 100;
-    font-size: 6em;
-    margin: 0;
-    text-shadow: 0 2px 0 rgba(0,91,103,.15);
+  font-family: 'Futura', sans-serif;
+  font-weight: 100;
+  font-size: 6em;
+  margin: 0;
+  text-shadow: 0 2px 0 rgba(0,91,103,.15);
 }
 
 .page-title h4 {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
-
-
 /* Portfolio Section */
-
 .projects {
-    background: #FFF;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 7rem 0 4rem;
+  background: #FFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 7rem 0 4rem;
 }
 
 .projects h2 {
@@ -221,13 +244,12 @@ header,
 }
 
 .projects p {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .projects .portfolio-item {
-    margin: 30px auto;
-    right: 0;
-
+  margin: 30px auto;
+  right: 0;
 }
 
 .projects .portfolio-item img {
@@ -236,42 +258,42 @@ header,
 }
 
 .projects .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .projects .portfolio-item .portfolio-link .caption {
-    background: #78C68E;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    opacity: 0;
-    transition: all ease 0.5s;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
+  background: #78C68E;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
 }
 
 .projects .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .projects .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
-    margin-top: -12px;
-    top: 50%;
-    color: white;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -12px;
+  top: 50%;
+  color: white;
 }
 
 .projects .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
-    color: #D6D6D6;
+  margin-top: -12px;
+  color: #D6D6D6;
 }
 
 .projects .portfolio-item .portfolio-link .caption .caption-content p {
@@ -280,38 +302,57 @@ header,
 }
 
 .projects * {
-    z-index: 2;
+  z-index: 2;
 }
-
-
 /* About Section */
-
 .intro {
-    font-family: 'Source Sans Pro', sans-serif;
-    background: linear-gradient(228deg, #78C68E, #56b4d3);
-    background-size: 400% 400%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(228deg, #78C68E, #56b4d3);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
+    }
 
-    -webkit-animation: AnimationName 6s ease infinite;
-    -moz-animation: AnimationName 6s ease infinite;
-    animation: AnimationName 6s ease infinite;
+    50% {
+      background-position: 20% 100%;
+    }
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+    100% {
+      background-position: 81% 0;
     }
-    @-moz-keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
     }
-    @keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+
+    50% {
+      background-position: 20% 100%;
     }
-    transform: skew(0,-4.5deg);
-    height: 768px;
+
+    100% {
+      background-position: 81% 0;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
+    }
+
+    50% {
+      background-position: 20% 100%;
+    }
+
+    100% {
+      background-position: 81% 0;
+    }
+  }
+  transform: skew(0,-4.5deg);
+  height: 768px;
 }
 
 .intro-inner {
@@ -320,26 +361,27 @@ header,
   padding: 7rem 0 4rem;
 }
 
-.intro .front, .back {
-    margin-top: 30px;
-    padding: 30px;
-    font-size: 1.4em;
-    background: #FFF;
-    border-radius: 10px;
-    line-height: 1.4em;
-    color: #161616;
-    box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+.back,
+.intro .front {
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 1.4em;
+  background: #FFF;
+  border-radius: 10px;
+  line-height: 1.4em;
+  color: #161616;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
 }
 
-.intro .front a:hover,
-.intro .back a:hover {
-    color: #78C68E;
-    text-decoration: none;
+.intro .back a:hover,
+.intro .front a:hover {
+  color: #78C68E;
+  text-decoration: none;
 }
 
 .intro a {
-    color: inherit;
-    font-style: italic;
+  color: inherit;
+  font-style: italic;
 }
 
 .intro .fa-id-card {
@@ -359,52 +401,51 @@ header,
   -o-perspective: 1000;
   perspective: 1000;
 }
-
-	/* flip the pane when hovered */
-  .flip-container.flipper, .flip-container.flip .flipper {
-	transform: rotateY(180deg);
+/* flip the pane when hovered */
+.flip-container.flip .flipper,
+.flip-container.flipper {
+  transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
-	width: 100%;
-	height: auto;
+.back,
+.flip-container,
+.front {
+  width: 100%;
+  height: auto;
 }
-
 /* flip speed goes here */
 .flipper {
   -moz-transform: perspective(1000px);
   -moz-transform-style: preserve-3d;
-	transition: 0.6s;
-	transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
   position: relative;
 }
-
 /* hide back of pane during swap */
-.front, .back {
+.back,
+.front {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
-	backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
-	top: 0;
-	left: 0;
+  top: 0;
+  left: 0;
 }
-
 /* front pane, placed above back */
 .front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
 }
-
 /* back, initially hidden pane */
 .back {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .portrait {
@@ -416,13 +457,10 @@ header,
   margin: 30px auto;
   box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
 }
-
-
 /* Contact / Footer */
-
 .social {
-    background: #FFF;
-    padding: 7rem 0 4rem;
+  background: #FFF;
+  padding: 7rem 0 4rem;
 }
 
 .social h2 {
@@ -433,7 +471,7 @@ header,
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.4em;
   padding: 20px;
-  margin: 30px auto 30px auto;
+  margin: 30px auto;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   width: 80%;
@@ -444,39 +482,33 @@ header,
   padding-bottom: 20px;
 }
 
-
-
 .social .contact-form .form-group {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-
-
 .social ul {
-    padding: 0;
-    margin: 30px auto 30px auto;
+  padding: 0;
+  margin: 30px auto;
 }
 
 .social ul li {
-    list-style-type: none;
-    text-align: center;
-    display: inline-block;
-    padding: 10px;
-
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
 }
 
 .social i {
-    font-size: 36px !important;
-    color: #444444;
-    width: 48px;
-    height: 48px;
-    margin: 20px auto 20px auto;
-    padding: 5px;
-    transition: all 0.2s ease-in-out;
+  font-size: 36px !important;
+  color: #444444;
+  width: 48px;
+  height: 48px;
+  margin: 20px auto;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
 }
-
 // .social i:hover {
 //   color: #78C68E;
 //   background: #FFF;
@@ -498,121 +530,136 @@ header,
 .social i.fa-twitter:hover {
   color: rgb(29, 161, 242);
 }
-
-
 /* Scroll Top Button */
-
 .scroll-top a {
-    background: none;
-    margin: 0;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 70px;
-    height: 70px;
-    z-index: 100;
-    text-decoration: none;
-    color: $dark-grey;
+  background: none;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  text-decoration: none;
+  color: $dark-grey;
 }
 
 .scroll-top a i {
-    font-size: 40px;
+  font-size: 40px;
 }
-
 /* VR button */
-
 .vr-link a {
-    background: none;
-    margin: 0;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 70px;
-    height: 70px;
-    z-index: 100;
-    text-decoration: none;
-    color: $dark-grey;
+  background: none;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  text-decoration: none;
+  color: $dark-grey;
 }
 
 .vr-link a i {
-    font-size: 40px;
-    transform: rotate(180deg);
+  font-size: 40px;
+  transform: rotate(180deg);
 }
 
 .copyright {
-    text-align: center;
-    color: #FFF;
-    padding: 5px;
-    background: linear-gradient(228deg, #348f50, #56b4d3);
-    background-size: 400% 400%;
+  text-align: center;
+  color: #FFF;
+  padding: 5px;
+  background: linear-gradient(228deg, #348f50, #56b4d3);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
+    }
 
-    -webkit-animation: AnimationName 6s ease infinite;
-    -moz-animation: AnimationName 6s ease infinite;
-    animation: AnimationName 6s ease infinite;
+    50% {
+      background-position: 20% 100%;
+    }
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+    100% {
+      background-position: 81% 0;
     }
-    @-moz-keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
     }
-    @keyframes AnimationName {
-        0%{background-position:81% 0%}
-        50%{background-position:20% 100%}
-        100%{background-position:81% 0%}
+
+    50% {
+      background-position: 20% 100%;
     }
+
+    100% {
+      background-position: 81% 0;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 81% 0;
+    }
+
+    50% {
+      background-position: 20% 100%;
+    }
+
+    100% {
+      background-position: 81% 0;
+    }
+  }
 }
-
-
-
 /* Media Queries */
-
-
 @media (max-width: 515px) {
-    .page-title {
-        padding-top: 50px;
-        padding-bottom: 280px;
-    }
-    .page-title h1 {
-        font-size: 4.2em;
-    }
+  .page-title {
+    padding-top: 50px;
+    padding-bottom: 280px;
+  }
 
-    .vr-link a i,
-    .scroll-top a i {
-      font-size: 30px;
-    }
+  .page-title h1 {
+    font-size: 4.2em;
+  }
+
+  .scroll-top a i,
+  .vr-link a i {
+    font-size: 30px;
+  }
 }
-
 @media (max-width: 768px) {
-    #navbarCollapse, #navbarCollapse li a, .navbar, .navbar-header {
-        background-color: transparent;
-        color: #FFF;
-        margin-top: 10px;
-    }
-    #lang {
-      float: none;
-    }
-}
+  #navbarCollapse,
+  #navbarCollapse li a,
+  .navbar,
+  .navbar-header {
+    background-color: transparent;
+    color: #FFF;
+    margin-top: 10px;
+  }
 
+  #lang {
+    float: none;
+  }
+}
 @media (max-width: 768px) {
-    .intro {
-        height: 1100px;
-    }
-    .portrait {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-}
+  .intro {
+    height: 1100px;
+  }
 
+  .portrait {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 1030px) {
-    .page-title {
-        padding-top: 50px;
-        padding-bottom: 300px;
-    }
+  .page-title {
+    padding-top: 50px;
+    padding-bottom: 300px;
+  }
 }
