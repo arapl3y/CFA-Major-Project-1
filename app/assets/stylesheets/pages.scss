@@ -232,7 +232,15 @@ header {
 .page-title h4 {
   font-family: 'Raleway', sans-serif;
 }
+
+.title {
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-shadow:2px 2px 0 rgba(0,0,0,0.2);
+}
+
 /* Portfolio Section */
+
 .projects {
   background: #FFF;
   font-family: 'Source Sans Pro', sans-serif;
@@ -256,11 +264,24 @@ header {
   box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
 }
 
-.projects .portfolio-item .caption {
+.portfolio-link {
+  transition: ease-out .4s;
+}
+
+.portfolio-link:hover {
+  text-decoration: none;
+  opacity: .4;
+}
+
+.item-wrap {
   display: block;
   position: relative;
-  max-width: 390px;
+  max-width: 400px;
   margin: 0 auto;
+}
+
+.projects .portfolio-item .caption {
+
   background: #78C68E;
   position: absolute;
   width: 100%;
@@ -606,8 +627,7 @@ header {
     font-size: 4.2em;
   }
 
-  .scroll-top a i,
-  .vr-link a i {
+  .scroll-top a i {
     font-size: 30px;
   }
 }
@@ -624,8 +644,7 @@ header {
   #lang {
     float: none;
   }
-}
-@media (max-width: 768px) {
+
   .intro {
     height: 1100px;
   }

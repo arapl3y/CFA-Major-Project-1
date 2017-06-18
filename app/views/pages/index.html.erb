@@ -46,9 +46,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2>Projects
-              <i class="fa fa-code"></i>
-            </h2>
+            <h2 class="title">Projects 🖼️</h2>
 
           </div>
         </div>
@@ -58,6 +56,7 @@
           <div class="col-sm-4 portfolio-item">
             <%#= link_to 'https://codepen.io/arapley/full/BKebVy/', class: 'portfolio-link' %>
 
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
                   <p>Secret Source (Rails)</p>
@@ -65,42 +64,58 @@
                   <a href="http://secretsourcecfa.herokuapp.com/" class="portfolio-link">
                     <i class="fa fa-search-plus fa-3x"></i>
                   </a>
+
+                  <a href="https://github.com/arapl3y/CFA-Major-Project-2" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <%#= link_to image_tag('single-page-portfolio-min.png'), class: 'img-responsive', alt: 'Single Page Portfolio' %>
               <img src="<%= asset_path 'secret-source-min.png' %>" class="img-responsive" alt="Secret Source">
-
+            </div>
           </div>
 
           <!-- devmatch -->
           <div class="col-sm-4 portfolio-item">
             <%# link_to 'http://thawing-fortress-18548.herokuapp.com/', class: 'portfolio-link' %>
-            <a href="http://thawing-fortress-18548.herokuapp.com/" class="portfolio-link">
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
-                  <p>DevMatch Fictional Startup (Rails)</p>
+                  <p>DevMatch Project (Rails)</p>
                   <br>
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <a href="http://thawing-fortress-18548.herokuapp.com/" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
+
+                  <a href="https://github.com/arapl3y/upskill_saas_tutorial" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <%#= link_to image_tag('devmatch-min.png'), class: 'img-responsive', alt: 'DevMatch' %>
               <img src="<%= asset_path 'devmatch-min.png' %>" class="img-responsive" alt="DevMatch">
-            </a>
+            </div>
           </div>
 
           <!-- aquila -->
           <div class="col-sm-4 portfolio-item">
             <%# link_to 'http://thawing-fortress-18548.herokuapp.com/', class: 'portfolio-link' %>
-            <a href="https://arcane-sierra-33990.herokuapp.com/users/sign_in" class="portfolio-link">
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
                   <p>Aquila Hackathon Project (Rails)</p>
                   <br>
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <a href="https://arcane-sierra-33990.herokuapp.com/users/sign_in" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
+
+                  <a href="https://github.com/arapl3y/CFA-LetsGetGit" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <img src="<%= asset_path 'Aquila.png' %>" class="img-responsive" alt="Aquila">
-            </a>
+            </div>
           </div>
         </div>
 
@@ -109,68 +124,90 @@
           <!-- local weather app -->
           <div class="col-sm-4 portfolio-item">
             <%#= link_to 'https://weather.alexrapley.com', class: 'portfolio-link' %>
-            <a href="https://weather.alexrapley.com" class="portfolio-link">
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
                   <p>Local Weather (jQuery)</p>
                   <br>
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <a href="https://weather.alexrapley.com" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
+
+                  <a href="https://github.com/arapl3y/FCC-localweather" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <%#= link_to image_tag('local-weather-min.png'), class: 'img-responsive', alt: 'Local Weather' %>
               <img src="<%= asset_path 'local-weather-min.png' %>" class="img-responsive" alt="Local Weather">
-            </a>
+            </div>
           </div>
 
           <!-- wiki viewer -->
           <div class="col-sm-4 portfolio-item">
             <%#= link_to 'https://wiki.alexrapley.com', class: 'portfolio-link' %>
-            <a href="https://wiki.alexrapley.com" class="portfolio-link">
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
                   <p>Wiki-viewer (jQuery)</p>
                   <br>
+                  <a href="https://wiki.alexrapley.com" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
 
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <a href="https://github.com/arapl3y/FCC-wiki-viewer" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <%#= link_to image_tag('wikipedia-viewer-min.png'), class: 'img-responsive', alt: 'Wikipedia Viewer' %>
               <img src="<%= asset_path 'wikipedia-viewer-min.png' %>" class="img-responsive" alt="Wikipedia Viewer">
-            </a>
+            </div>
           </div>
 
           <!-- random quote -->
           <div class="col-sm-4 portfolio-item">
             <%#= link_to 'https://quotes.alexrapley.com', class: 'portfolio-link' %>
-            <a href="https://quotes.alexrapley.com" class="portfolio-link">
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
                   <p>Design Quote Generator (jQuery)</p>
                   <br>
+                  <a href="https://quotes.alexrapley.com" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
 
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <a href="https://github.com/arapl3y/FCC-talkingdesign" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <%#= link_to image_tag('quote-machine-min.png'), class: 'img-responsive', alt: 'Random Quote Machine' %>
               <img src="<%= asset_path 'quote-machine-min.png' %>" class="img-responsive" alt="Random Quote Machine">
-            </a>
+            </div>
           </div>
         </div>
         <div class="row">
           <!-- ar's vr   -->
           <div class="col-sm-4 portfolio-item">
             <%#= link_to 'https://codepen.io/arapley/full/BKebVy/', class: 'portfolio-link' %>
-            <a href="https://vr.alexrapley.com" class="portfolio-link">
+            <div class="item-wrap">
               <div class="caption">
                 <div class="caption-content">
                   <p>Virtual Reality Portfolio (A-Frame)</p>
                   <br>
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <a href="https://vr.alexrapley.com" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
+
+                  <a href="https://github.com/arapl3y/aframe_portfolio_projects" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
                 </div>
               </div>
               <%#= link_to image_tag('single-page-portfolio-min.png'), class: 'img-responsive', alt: 'Single Page Portfolio' %>
               <img src="<%= asset_path 'ar-vr-min.png' %>" class="img-responsive" alt="Virtual Reality Portfolio">
-            </a>
+            </div>
           </div>
         </div>
 
@@ -181,9 +218,7 @@
       <div class="intro-inner">
         <div class="row">
           <div class="col-md-12">
-            <h2>About
-              <i class="fa fa-id-card"></i>
-            </h2>
+            <h2 class="title">About 🙋🏻‍♂</h2>
 
           </div>
           <div class="row">
@@ -249,9 +284,7 @@
     <section id="contact" class="social">
       <div class="row">
         <div class="col-md-12">
-          <h2>Contact
-            <i class="fa fa-handshake-o"></i>
-          </h2>
+          <h2 class="title">Contact 📬</h2>
 
         </div>
       </div>
