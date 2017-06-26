@@ -52,6 +52,28 @@
         </div>
 
         <div class="row">
+
+          <!-- virtual gallery app -->
+          <div class="col-sm-4 portfolio-item">
+            <div class="item-wrap">
+              <div class="caption">
+                <div class="caption-content">
+                  <p>Virtual Gallery (React + Node)</p>
+                  <br>
+                  <a href="http://mighty-thicket-40847.herokuapp.com/" class="portfolio-link">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </a>
+
+                  <a href="https://github.com/arapl3y/CFA-Major-Project-3-Node" class="portfolio-link">
+                    <i class="fa fa-github fa-3x"></i>
+                  </a>
+                </div>
+              </div>
+              <img src="<%= asset_path 'virtual-gallery-min.png' %>" class="img-responsive" alt="Virtual Gallery">
+            </div>
+          </div>
+
+
           <!-- secret source app -->
           <div class="col-sm-4 portfolio-item">
             <%#= link_to 'https://codepen.io/arapley/full/BKebVy/', class: 'portfolio-link' %>
@@ -97,6 +119,11 @@
             </div>
           </div>
 
+        </div>
+
+
+        <div class="row">
+
           <!-- aquila -->
           <div class="col-sm-4 portfolio-item">
             <%# link_to 'http://thawing-fortress-18548.herokuapp.com/', class: 'portfolio-link' %>
@@ -117,213 +144,215 @@
               <img src="<%= asset_path 'Aquila.png' %>" class="img-responsive" alt="Aquila">
             </div>
           </div>
-        </div>
 
 
-        <div class="row">
-          <!-- local weather app -->
-          <div class="col-sm-4 portfolio-item">
-            <%#= link_to 'https://weather.alexrapley.com', class: 'portfolio-link' %>
-            <div class="item-wrap">
-              <div class="caption">
-                <div class="caption-content">
-                  <p>Local Weather (jQuery)</p>
-                  <br>
-                  <a href="https://weather.alexrapley.com" class="portfolio-link">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </a>
+        <!-- local weather app -->
+        <div class="col-sm-4 portfolio-item">
+          <%#= link_to 'https://weather.alexrapley.com', class: 'portfolio-link' %>
+          <div class="item-wrap">
+            <div class="caption">
+              <div class="caption-content">
+                <p>Local Weather (jQuery)</p>
+                <br>
+                <a href="https://weather.alexrapley.com" class="portfolio-link">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
 
-                  <a href="https://github.com/arapl3y/FCC-localweather" class="portfolio-link">
-                    <i class="fa fa-github fa-3x"></i>
-                  </a>
-                </div>
+                <a href="https://github.com/arapl3y/FCC-localweather" class="portfolio-link">
+                  <i class="fa fa-github fa-3x"></i>
+                </a>
               </div>
-              <%#= link_to image_tag('local-weather-min.png'), class: 'img-responsive', alt: 'Local Weather' %>
-              <img src="<%= asset_path 'local-weather-min.png' %>" class="img-responsive" alt="Local Weather">
             </div>
-          </div>
-
-          <!-- wiki viewer -->
-          <div class="col-sm-4 portfolio-item">
-            <%#= link_to 'https://wiki.alexrapley.com', class: 'portfolio-link' %>
-            <div class="item-wrap">
-              <div class="caption">
-                <div class="caption-content">
-                  <p>Wiki-viewer (jQuery)</p>
-                  <br>
-                  <a href="https://wiki.alexrapley.com" class="portfolio-link">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </a>
-
-                  <a href="https://github.com/arapl3y/FCC-wiki-viewer" class="portfolio-link">
-                    <i class="fa fa-github fa-3x"></i>
-                  </a>
-                </div>
-              </div>
-              <%#= link_to image_tag('wikipedia-viewer-min.png'), class: 'img-responsive', alt: 'Wikipedia Viewer' %>
-              <img src="<%= asset_path 'wikipedia-viewer-min.png' %>" class="img-responsive" alt="Wikipedia Viewer">
-            </div>
-          </div>
-
-          <!-- random quote -->
-          <div class="col-sm-4 portfolio-item">
-            <%#= link_to 'https://quotes.alexrapley.com', class: 'portfolio-link' %>
-            <div class="item-wrap">
-              <div class="caption">
-                <div class="caption-content">
-                  <p>Design Quote Generator (jQuery)</p>
-                  <br>
-                  <a href="https://quotes.alexrapley.com" class="portfolio-link">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </a>
-
-                  <a href="https://github.com/arapl3y/FCC-talkingdesign" class="portfolio-link">
-                    <i class="fa fa-github fa-3x"></i>
-                  </a>
-                </div>
-              </div>
-              <%#= link_to image_tag('quote-machine-min.png'), class: 'img-responsive', alt: 'Random Quote Machine' %>
-              <img src="<%= asset_path 'quote-machine-min.png' %>" class="img-responsive" alt="Random Quote Machine">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- ar's vr   -->
-          <div class="col-sm-4 portfolio-item">
-            <%#= link_to 'https://codepen.io/arapley/full/BKebVy/', class: 'portfolio-link' %>
-            <div class="item-wrap">
-              <div class="caption">
-                <div class="caption-content">
-                  <p>Virtual Reality Portfolio (A-Frame)</p>
-                  <br>
-                  <a href="https://vr.alexrapley.com" class="portfolio-link">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </a>
-
-                  <a href="https://github.com/arapl3y/aframe_portfolio_projects" class="portfolio-link">
-                    <i class="fa fa-github fa-3x"></i>
-                  </a>
-                </div>
-              </div>
-              <%#= link_to image_tag('single-page-portfolio-min.png'), class: 'img-responsive', alt: 'Single Page Portfolio' %>
-              <img src="<%= asset_path 'ar-vr-min.png' %>" class="img-responsive" alt="Virtual Reality Portfolio">
-            </div>
+            <%#= link_to image_tag('local-weather-min.png'), class: 'img-responsive', alt: 'Local Weather' %>
+            <img src="<%= asset_path 'local-weather-min.png' %>" class="img-responsive" alt="Local Weather">
           </div>
         </div>
 
-      </div>
-    </section>
+        <!-- wiki viewer -->
+        <div class="col-sm-4 portfolio-item">
+          <%#= link_to 'https://wiki.alexrapley.com', class: 'portfolio-link' %>
+          <div class="item-wrap">
+            <div class="caption">
+              <div class="caption-content">
+                <p>Wiki-viewer (jQuery)</p>
+                <br>
+                <a href="https://wiki.alexrapley.com" class="portfolio-link">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
 
-    <section id="about" class="intro">
-      <div class="intro-inner">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="title">About 🙋🏻‍♂</h2>
-
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <img src="<%= asset_path 'portrait-min.png' %>" class="img-responsive portrait" alt="Single Page Portfolio">
-
-            </div>
-            <div class="col-xs-12 col-sm-6">
-
-              <div class="flip-container">
-
-                <div class="flipper">
-
-                  <div class="front">
-                    <p>
-                      Hello!
-                      <br/>
-                      My name's Alex - I've always been fascinated by language and have a Bachelor's Degree in Chinese Studies and History (USyd).<br/><br/>
-                      I'm currently studying Web Development full-time at
-                      <a href="https://coderacademy.edu.au/">Coder Factory Academy</a>. If you'd like a hand with your website or application, don't hesitate to get in touch.
-                      <br/><br/>
-                      I have experience in:
-
-                      <br>
-                      <br>
-                      <i class="icon-html5-alt"></i>
-                      <i class="icon-css3-alt"></i>
-                      <i class="icon-javascript-alt"></i>
-                      <i class="icon-ruby"></i>
-                    </p>
-                  </div>
-
-                  <div class="back">
-                    <p>
-                      大家好!
-                      <br/>
-                      我叫Alex，一位主修中文和历史学的悉尼大学毕业生。
-                      <br>
-                      我一直觉得学语言特别有意思，在大学中我花了很多时间学中文包括古文，但是现在好久没练了， 说出来的中文听起来有点可怕。 我目前在学电脑变成，做一些自己的项目以及参与各种公开变成项目。 有意请联络。
-
-                      <br/>
-                      <br/>
-                      我有<i class="icon-html5-alt"></i>
-                      <i class="icon-css3-alt"></i>
-                      <i class="icon-javascript-alt"></i>
-                      <i class="icon-ruby"></i>的经验.
-                    </p>
-                  </div>
-                </div>
+                <a href="https://github.com/arapl3y/FCC-wiki-viewer" class="portfolio-link">
+                  <i class="fa fa-github fa-3x"></i>
+                </a>
               </div>
-
             </div>
-            <button type='button' id="lang" class="btn btn-default">中文</button>
+            <%#= link_to image_tag('wikipedia-viewer-min.png'), class: 'img-responsive', alt: 'Wikipedia Viewer' %>
+            <img src="<%= asset_path 'wikipedia-viewer-min.png' %>" class="img-responsive" alt="Wikipedia Viewer">
           </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- end main -->
-
-  <!-- contact and footer -->
-  <footer>
-    <section id="contact" class="social">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="title">Contact 📬</h2>
-
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-12">
-          <div id="contact" class="contact-form">
 
-            <%= render 'contact_items/form', contact_item: @contact_item %>
+        <!-- random quote -->
+        <div class="col-sm-4 portfolio-item">
+          <%#= link_to 'https://quotes.alexrapley.com', class: 'portfolio-link' %>
+          <div class="item-wrap">
+            <div class="caption">
+              <div class="caption-content">
+                <p>Design Quote Generator (jQuery)</p>
+                <br>
+                <a href="https://quotes.alexrapley.com" class="portfolio-link">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
 
+                <a href="https://github.com/arapl3y/FCC-talkingdesign" class="portfolio-link">
+                  <i class="fa fa-github fa-3x"></i>
+                </a>
+              </div>
+            </div>
+            <%#= link_to image_tag('quote-machine-min.png'), class: 'img-responsive', alt: 'Random Quote Machine' %>
+            <img src="<%= asset_path 'quote-machine-min.png' %>" class="img-responsive" alt="Random Quote Machine">
           </div>
+        </div>
 
-          <ul>
-            <li>
-              <a href="mailto:rapley3@gmail.com">
-                <i class="fa fa-envelope"></i>
+
+
+      <!-- ar's vr   -->
+      <div class="col-sm-4 portfolio-item">
+        <%#= link_to 'https://codepen.io/arapley/full/BKebVy/', class: 'portfolio-link' %>
+        <div class="item-wrap">
+          <div class="caption">
+            <div class="caption-content">
+              <p>Virtual Reality Portfolio (A-Frame)</p>
+              <br>
+              <a href="https://vr.alexrapley.com" class="portfolio-link">
+                <i class="fa fa-search-plus fa-3x"></i>
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/arapl3y">
-                <i class="fa fa-github"></i>
+
+              <a href="https://github.com/arapl3y/aframe_portfolio_projects" class="portfolio-link">
+                <i class="fa fa-github fa-3x"></i>
               </a>
-            </li>
-            <li>
-              <a href="https://au.linkedin.com/in/alex-rapley-7a00b159">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/arapl3y">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <%#= link_to image_tag('single-page-portfolio-min.png'), class: 'img-responsive', alt: 'Single Page Portfolio' %>
+          <img src="<%= asset_path 'ar-vr-min.png' %>" class="img-responsive" alt="Virtual Reality Portfolio">
         </div>
       </div>
-    </section>
-    <div class="copyright">&copy; 2016</div>
-  </footer>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="intro">
+  <div class="intro-inner">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title">About 🙋🏻‍♂</h2>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <img src="<%= asset_path 'portrait-min.png' %>" class="img-responsive portrait" alt="Single Page Portfolio">
+
+        </div>
+        <div class="col-xs-12 col-sm-6">
+
+          <div class="flip-container">
+
+            <div class="flipper">
+
+              <div class="front">
+                <p>
+                  Hello!
+                  <br/>
+                  My name's Alex - I've always been fascinated by language and culture and have a Bachelor's Degree in Chinese Studies and History <a href="https://sydney.edu.au/">(USyd)</a>.<br/><br/>
+                  I've recently completed a Diploma of Software Development
+                  <a href="https://coderacademy.edu.au/">(Coder Factory Academy)</a>. If you'd like a hand with your website or application, don't hesitate to get in touch.
+                  <br/><br/>
+                  I have experience in:
+
+                  <br>
+                  <br>
+                  <i class="icon-html5-alt"></i>
+                  <i class="icon-css3-alt"></i>
+                  <i class="icon-javascript-alt"></i>
+                  <i class="icon-ruby"></i>
+                </p>
+              </div>
+
+              <div class="back">
+                <p>
+                  大家好!
+                  <br/>
+                  我叫Alex，一位主修中文和历史学的悉尼大学毕业生。
+                  <br>
+                  我一直觉得学语言特别有意思，在大学中我花了很多时间学中文包括古文，但是现在好久没练了， 说出来的中文听起来有点可怕。 我目前在学电脑变成，做一些自己的项目以及参与各种公开变成项目。 有意请联络。
+
+                  <br/>
+                  <br/>
+                  我有<i class="icon-html5-alt"></i>
+                  <i class="icon-css3-alt"></i>
+                  <i class="icon-javascript-alt"></i>
+                  <i class="icon-ruby"></i>的经验.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button type='button' id="lang" class="btn btn-default">中文</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- end main -->
+
+<!-- contact and footer -->
+<footer>
+  <section id="contact" class="social">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title">Contact 📬</h2>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="contact" class="contact-form">
+
+          <%= render 'contact_items/form', contact_item: @contact_item %>
+
+        </div>
+
+        <ul>
+          <li>
+            <a href="mailto:rapley3@gmail.com">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/arapl3y">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://au.linkedin.com/in/alex-rapley-7a00b159">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/arapl3y">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="copyright">&copy; 2016</div>
+</footer>
 </div>
 
 <!-- Scroll to top button -->
