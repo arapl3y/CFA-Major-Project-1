@@ -26,11 +26,30 @@ $(document).ready(function() {
     app.scrollTopBtn();
     app.buttonFade();
     app.toggleLanguage();
+    app.scrollReveal();
+
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
       $('.navbar-toggle:visible').click();
     });
 
+  };
+
+  app.scrollReveal = function() {
+    var config = {
+      viewFactor : 0.50,
+      duration   : 1000,
+      distance   : "0px",
+      scale      : 0,
+      viewOffset: { top: 50 },
+    }
+
+    window.sr = new ScrollReveal(config);
+    sr.reveal('.page-title');
+    sr.reveal('.portfolio-item', { duration: 1000 }, 200);
+    sr.reveal('.intro-cards');
+    sr.reveal('.contact-form');
+    sr.reveal('.social-buttons');
   };
 
   // Page scrolling - requires jQuery Easing plugin
